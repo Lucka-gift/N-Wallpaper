@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: Roboto;
+}
+body {
+  background: #c5cae9;
+  transition: 5s easy;
+  overflow-x: hidden;
+}
+.box {
+  display: flex;
+  overflow: hidden;
+  width: 400vh;
+  height: 50vw;
+  margin: 2px 200vw 10px 10vw;
+}
+.im {
+  float: left;
+  background: url(image/1335470.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  height: 50vw;
+  width: 20%;
+  opacity: 0.8;
+  transition: 5s;
+  text-align: center;
+}
+.inter:hover {
+  transform: scale(1.009);
+  transition: 0.5s;
+}
+.inter {
+  overflow: hidden;
+  position: absolute;
+  left: 7%;
+  top: 40%;
+  font-size: 3em;
+  width: 15vw;
+  height: 30vh;
+  border-radius: 10px;
+  width: 20vw;
+  background: url(image/logo.png) no-repeat 50% 50%;
+  background-size: cover;
+  font-size: 5em;
+}
+
+h3 {
+  font-size: 3em;
+  backdrop-filter: blur(3px);
+  color: #1a3d7c;
+}
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+.text {
+  float: right;
+  background: #23d5;
+  width: 15%;
+  margin-right: 20vw;
+}
+.titre {
+  font-size: 4em;
+  font-weight: 800;
+  color: #1a3d7c;
+  text-align: center;
+  font-family: "Poppins";
+}
+.titre2 {
+  font-size: 3em;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.soustitre {
+  padding-left: 5px;
+  font-size: 1.5em;
+  color: #333333;
+}
+.icone {
+  font-size: 2.5em;
+  margin: 20px;
+  color: #00b3c6;
+  position: absolute;
+  top: 30%;
+  right: 77%;
+}
+.icone a {
+  color: #00b3c6;
+}
+.icone a:hover {
+  transform: scale(1.2);
+  color: #1a3d7c;
+  transition: 0.5s;
+}
+.scroll {
+  font-size: 5em;
+  position: fixed;
+  top: 40%;
+  right: 2%;
+  padding: 1px;
+  color: #00b3c6;
+  z-index: 1;
+}
+.scroll:hover {
+  transform: translatex(-6px);
+  transition: 0.7s ease-in-out;
+}
+#entier{
+  overflow: hidden;
+}
+
+#presentation {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+#presentation h1 {
+  padding: 20px 10px 50px 20px;
+  font-size: 2.7em;
+  color: #1a3d7c;
+  background: #00b3c6;
+  background-size: cover;
+  width: 80%;
+  margin: 20px auto;
+}
+ul {
+  display: flex;
+  font-weight: 900;
+  font-size: 5em;
+  width: 75%;
+  margin: 30px auto;
+  position: relative;
+  left: -70%;
+  opacity: 0;
+  transition: 2s;
+}
+ul li {
+  list-style: none;
+  color: #c5cae9;
+  background: #23d5;
+  box-shadow: #333333 5px 10px 4px;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 10px;
+}
+
+li:hover {
+  transform: scale(1.1);
+  transition: 0.7s ease-in-out;
+  opacity: 0.5;
+}
+h2 {
+  font-size: 1.7em;
+  position: relative;
+  transition: 4s;
+  background: #333333;
+  color: #c5cae9;
+  width: 101%;
+}
+
+h2:hover {
+  font-size: 1.7em;
+  position: relative;
+  background: #c5cae9;
+}
+h2::after {
+  content: "";
+  background: #333333;
+  width: 0;
+  height: 6px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 2s;
+}
+h2:hover::after {
+  content: "";
+  background: #333333;
+  width: 120%;
+  height: 6px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#gallery h1 {
+  font-size: 3em;
+  padding: 20px;
+  text-align: center;
+  color: #333333;
+  text-shadow: #1a3d7c 2px 6px 3px;
+  position: relative;
+}
+#gallery h1::after {
+  content: "";
+  background: #333333;
+  width: 0;
+  height: 6px;
+  position: absolute;
+  bottom:3%;
+  left: 0;
+  transition: 1s;
+}
+#gallery h1:hover::after {
+  content: "";
+  background: #333333;
+  width: 120%;
+  height: 6px;
+  position: absolute;
+  bottom:5%;
+  left: 0;
+}
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.grid-gallery img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: #333333 5px 4px 5px;
+  transition: transform 0.3s;
+}
+
+.grid-gallery img:hover {
+  transform: scale(1.05);
+}
+#contact {
+  text-align: center;
+  margin: 100px auto;
+}
+input {
+  font-size: 1.2em;
+  transition: 0.5s;
+  width: 32%;
+  height: 30px;
+  margin: 4px;
+  background: transparent;
+  border-color: transparent;
+  border-bottom: #333333 0.2px solid;
+}
+input:hover {
+  width: 40%;
+}
+textarea {
+  background: transparent;
+  resize: none;
+}
+#lien {
+  font-size: 1.7em;
+  transition: 0.5s;
+}
+#lien:hover {
+  transform: scale(1.2);
+}
+#lien a {
+  color: #333333;
+}
+#Programation {
+  background: url(image/1337285.png) no-repeat 50% 50%;
+  background-size: cover;
+  width: 100%;height: 100vh;
+}
